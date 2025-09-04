@@ -39,5 +39,104 @@
 
     <p>Você pode ver ou editar minha lista de tarefas no <a href="https://docs.google.com" target="_blank">Google Docs</a>.</p>
 
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulário de Currículo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 30px;
+        }
+
+        .container {
+            background: #fff;
+            max-width: 700px;
+            margin: auto;
+            padding: 30px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        label {
+            display: block;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        textarea,
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 12px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            width: 100%;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Formulário de Currículo</h2>
+    <form action="#" method="post">
+        <label for="nome">Nome Completo</label>
+        <input type="text" id="nome" name="nome" required>
+
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="telefone">Telefone</label>
+        <input type="tel" id="telefone" name="telefone" required>
+
+        <label for="endereco">Endereço</label>
+        <input type="text" id="endereco" name="endereco">
+
+        <label for="formacao">Formação Acadêmica</label>
+        <textarea id="formacao" name="formacao" rows="4" required></textarea>
+
+        <label for="experiencia">Experiência Profissional</label>
+        <textarea id="experiencia" name="experiencia" rows="4" required></textarea>
+
+        <label for="habilidades">Habilidades</label>
+        <textarea id="habilidades" name="habilidades" rows="3" required></textarea>
+
+        <label for="idiomas">Idiomas</label>
+        <input type="text" id="idiomas" name="idiomas">
+
+        <button type="submit">Enviar Currículo</button>
+    </form>
+</div>
+
 </body>
 </html>
